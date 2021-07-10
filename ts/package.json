@@ -1,0 +1,20 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.0.3"
+  },
+  "dependencies": {
+    "@msgpack/msgpack": "^2.7.0",
+    "@types/websocket": "^1.0.3",
+    "morglod_mystd": "^1.0.8",
+    "websocket": "^1.0.34"
+  }
+}
