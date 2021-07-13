@@ -15,7 +15,7 @@ enum MethodCallArg_BuiltDataType : int32_t
     Unknown = 0,
     // nullptr
     Null = -2,
-    // RPCTBuffer
+    // rpct::BufferPtr
     Buffer = -3,
     // float
     Float = -4,
