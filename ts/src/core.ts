@@ -5,6 +5,7 @@ export enum MethodCallArg_BuiltDataType {
     Float = -4,
     String = -5,
     Callback = -6,
+    StringDictionary = -7,
 };
 
 export type MethodCallArgData = {
