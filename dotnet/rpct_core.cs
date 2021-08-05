@@ -12,6 +12,7 @@ namespace rpct_dotnet
         Float = -4,
         String = -5,
         Callback = -6,
+        StringDictionary = -7,
     }
 
     [Serializable]
@@ -104,7 +105,8 @@ namespace rpct_dotnet
             if (type == ((double)0).GetType()) return (int)MethodCallArg_BuiltDataType.Float;
             if (type == ("".GetType())) return (int)MethodCallArg_BuiltDataType.String;
             if (type == ((new byte[1]).GetType())) return (int)MethodCallArg_BuiltDataType.Buffer;
-            if (value.GetType() == typeof(DCallback)) return (int)MethodCallArg_BuiltDataType.Callback;
+            if (type == typeof(DCallback)) return (int)MethodCallArg_BuiltDataType.Callback;
+            if (type == typeof(System.Collections.Generic.Dictionary<string, string>)) return (int)MethodCallArg_BuiltDataType.StringDictionary;
 
             return (int)MethodCallArg_BuiltDataType.Unknown;
         }
