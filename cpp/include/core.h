@@ -23,6 +23,8 @@ enum MethodCallArg_BuiltDataType : int32_t
     String = -5,
     // RPCTMethodCallbackPtr
     Callback = -6,
+    // TODO: unordered_map<string, string>
+    StringDictionary = -7,
 };
 
 struct MethodCallArgData
